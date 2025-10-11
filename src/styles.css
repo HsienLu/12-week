@@ -1,0 +1,132 @@
+:root {
+  --ok: #16a34a;
+  --warn: #f59e0b;
+  --bad: #ef4444;
+  --bg: #f8fafc;
+  --card: #fff;
+  --muted: #475569;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  margin: 0;
+  background: var(--bg);
+  color: #0f172a;
+}
+.container {
+  max-width: 1100px;
+  margin: 16px auto;
+  padding: 0 12px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+h1 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.muted {
+  color: var(--muted);
+  margin: 4px 0;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+}
+.btn {
+  background: #111827;
+  color: #fff;
+  border: 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn.primary {
+  background: #0ea5a4;
+}
+.btn.danger {
+  background: #ef4444;
+}
+.card {
+  background: var(--card);
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(2, 6, 23, 0.06);
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.week {
+  padding: 12px;
+}
+.week label {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+.week input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #e6edf3;
+}
+.week input[type="checkbox"] {
+  transform: scale(1.2);
+}
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+}
+.badge.--ok {
+  background: var(--ok);
+}
+.badge.--warn {
+  background: var(--warn);
+}
+.badge.--bad {
+  background: var(--bad);
+}
+.progress {
+  height: 10px;
+  background: #e6edf3;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.progress i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #60a5fa, #06b6d4);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

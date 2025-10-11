@@ -1,0 +1,46 @@
+/* shadcn default theme tokens (colors, radius, shadows) */
+:root {
+  /* Colors */
+  /* Muted / low-contrast palette (RGB tokens for Tailwind CSS variable usage) */
+  /* Format: R G B (space-separated) */
+  --shadcn-bg: 246 247 249; /* #f6f7f9 */
+  --shadcn-foreground: 11 18 32; /* #0b1220 */
+  --shadcn-muted: 107 119 133; /* #6b7785 */
+  --shadcn-primary: 91 112 131; /* #5b7083 */
+  --shadcn-primary-foreground: 255 255 255; /* #ffffff */
+  --shadcn-secondary: 238 241 245; /* #eef1f5 */
+  --shadcn-border: 227 232 238; /* #e3e8ee */
+  --shadcn-card: 255 255 255; /* #ffffff */
+  --shadcn-success: 47 122 74; /* #2f7a4a */
+  --shadcn-warning: 181 131 36; /* #b58324 */
+  --shadcn-destructive: 178 58 58; /* #b23a3a */
+
+  /* Fallback hex variables for raw CSS that may reference them */
+  --shadcn-bg-hex: #f6f7f9;
+  --shadcn-foreground-hex: #0b1220;
+  --shadcn-muted-hex: #6b7785;
+  --shadcn-primary-hex: #5b7083;
+  --shadcn-secondary-hex: #eef1f5;
+  --shadcn-border-hex: #e3e8ee;
+  --shadcn-card-hex: #ffffff;
+  --shadcn-success-hex: #2f7a4a;
+  --shadcn-warning-hex: #b58324;
+  --shadcn-destructive-hex: #b23a3a;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(2, 6, 23, 0.06);
+  --shadow-md: 0 6px 18px rgba(2, 6, 23, 0.08);
+
+  /* Legacy semantics (kept for compatibility) */
+  --ok: 22 163 74; /* #16a34a */
+  --warn: 245 158 11; /* #f59e0b */
+  --bad: 239 68 68; /* #ef4444 */
+  --muted-legacy: 71 85 105; /* #475569 */
+}
+
+/* No helper classes: prefer Tailwind utilities + CSS variables. */

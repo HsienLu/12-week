@@ -1,0 +1,20 @@
+@import "./styles/shadcn-theme.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global defaults reduced: use Tailwind utilities for layout and styling.
+   Keep only body-level font and background that apply app-wide. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* Use CSS variables (RGB) from shadcn-theme for background and text */
+  background: rgb(var(--shadcn-bg));
+  color: rgb(var(--shadcn-foreground));
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  margin: 0;
+}
