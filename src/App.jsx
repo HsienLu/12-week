@@ -161,7 +161,7 @@ export default function App() {
         </div>
 
         {/* Enhanced Table */}
-        <Card className="shadow-xl border-0 overflow-hidden">
+        <Card className="shadow-xl border-0 overflow-visible">
           <div className="p-6 bg-gradient-to-r from-shadcn-primary/5 to-shadcn-secondary/20 border-b">
             <h2 className="text-xl font-semibold text-shadcn-foreground">
               週進度追蹤
@@ -170,7 +170,7 @@ export default function App() {
               追蹤你的 12 週計畫執行狀況
             </p>
           </div>
-          <div className="overflow-x-auto">
+          <div className="relative max-h-[70vh] overflow-y-auto overflow-x-auto">
             <table className="min-w-full table-fixed">
               <colgroup>
                 <col style={{width: "160px"}} />
@@ -180,7 +180,7 @@ export default function App() {
                 <col style={{width: "80px"}} />
                 <col />
               </colgroup>
-              <thead className="bg-shadcn-secondary/50">
+              <thead className="bg-shadcn-secondary/70 backdrop-blur sticky top-0 z-10 shadow-sm">
                 <tr>
                   <th className="px-4 py-3 text-left text-sm font-semibold text-shadcn-muted uppercase tracking-wider">
                     週次
